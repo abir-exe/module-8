@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Flex</title>
+    <style>
+        .container{
+            display: flex;
+            gap:10px;
+        }
+        .box{
+            background-color: slateblue;
+            padding: 10px;
+            border-radius: 20px;
+        }
+        .container2{
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+        .item{
+            width: 200px;
+            height: 100px;
+            background-color: aquamarine;
+            border: 2px solid tomato;
+        }
+        @media screen and (max-width:576px) {
+            .container{
+                flex-direction: column;
+            }        
+        }
+    </style>
+</head>
+<body>
+    <h2>Responsive Flex</h2>
+    <div class="container">
+    <div class="box">
+        <h3>first box</h3>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Molestias ut perspiciatis et quos, voluptas ducimus natus? Sequi eveniet fuga dolores voluptatum magnam officia ratione quisquam amet molestiae cupiditate cum inventore, fugiat modi atque nihil animi earum consequuntur pariatur. Non culpa temporibus totam dolor veniam iusto voluptatibus quia aperiam eos officiis minus dolore quos distinctio aliquid, cum quisquam sequi! Soluta distinctio alias corrupti animi sit totam quaerat provident sunt autem, itaque dolorum inventore excepturi quasi deleniti temporibus nulla beatae libero neque voluptate eaque quas amet omnis? Sint iure praesentium accusamus, veniam nemo nihil provident laboriosam ullam voluptas laborum voluptate optio suscipit.</p>
+    </div>
+    <div class="box">
+        <h3>first box</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias itaque magni dicta reprehenderit tenetur incidunt sequi consequatur illum optio voluptatum nam numquam, pariatur vitae est laboriosam aliquam cupiditate debitis nulla sit unde ea voluptas non. Consectetur eaque distinctio doloribus explicabo architecto non veritatis maxime. Molestias nobis, aspernatur ab mollitia iure itaque ex fugiat ea, totam omnis cumque nemo deleniti asperiores libero obcaecati, quas accusamus illum quia blanditiis sit? Rem, eligendi tenetur vitae iste enim quaerat? Impedit corrupti fugiat voluptate nam accusantium consectetur officiis perferendis exercitationem eius nostrum, facere illo accusamus, porro in reprehenderit vitae deleniti incidunt labore neque aliquid unde!</p>
+    </div>
+    </div>
+   
+    <div class="container2">
+        <div class="item">item -1</div>
+        <div class="item">item -2</div>
+        <div class="item">item -3</div>
+        <div class="item">item -4</div>
+        <div class="item">item -5</div>
+        <div class="item">item -6</div>
+        <div class="item">item -7</div>
+        <div class="item">item -8</div>
+        <div class="item">item -9</div>
+        <div class="item">item -10</div>
+    </div>
+</body>
+</html>
