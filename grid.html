@@ -1,28 +1,34 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-        .container{
+        .container {
             display: grid;
             grid-template-columns: repeat(4, 1fr);
-            grid-template-rows: repeat(3,200px)  50px 50px;
+            grid-template-rows: repeat(3, 200px) 50px 50px;
             gap: 20px;
         }
-        .box{
+
+        .box {
             background-color: grey;
         }
-        #box-1{
+
+        #box-1 {
             grid-row: span 5
         }
-        #box-11, #box-12{
+
+        #box-11,
+        #box-12 {
             grid-column: span 3;
         }
     </style>
 </head>
+
 <body>
     <div class="container">
         <div class="box" id="box-1">box -1</div>
@@ -39,4 +45,5 @@
         <div class="box" id="box-12">box -12</div>
     </div>
 </body>
+
 </html>
